@@ -18,10 +18,14 @@ jobs:
 
   integration:
     runs-on: ubuntu-20.04
+    continue-on-error: True
     steps:
       - run: echo "This is an integration step"
       - run: exit 1
-
+  Artifact:
+    runs-on: ubuntu-20.04
+    steps:
+      - a
   prod:
     runs-on: ubuntu-20.04
     steps:
